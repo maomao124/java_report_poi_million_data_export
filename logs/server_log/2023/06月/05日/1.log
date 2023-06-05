@@ -1,0 +1,126 @@
+2023-06-05 13:52:11.919  INFO 31872 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-06-05 13:52:11.923  INFO 31872 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-06-05 14:17:44.596  INFO 18368 --- [main] avaReportPoiMillionDataExportApplication : Starting JavaReportPoiMillionDataExportApplication using Java 1.8.0_332 on mao with PID 18368 (D:\程序\大四下期\java_report_poi_million_data_export\target\classes started by mao in D:\程序\大四下期\java_report_poi_million_data_export)
+2023-06-05 14:17:44.598 DEBUG 18368 --- [main] avaReportPoiMillionDataExportApplication : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-06-05 14:17:44.599  INFO 18368 --- [main] avaReportPoiMillionDataExportApplication : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 14:17:44.982  INFO 18368 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-05 14:17:45.044  INFO 18368 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-05 14:17:45.584  INFO 18368 --- [main] avaReportPoiMillionDataExportApplication : Started JavaReportPoiMillionDataExportApplication in 1.195 seconds (JVM running for 1.713)
+2023-06-05 14:17:45.591  INFO 18368 --- [main] m.j.service.UserServiceImpl              : 开始导出百万数据
+2023-06-05 14:17:45.669  INFO 18368 --- [main] m.j.service.UserServiceImpl              : 查询第1页
+2023-06-05 14:17:45.876 DEBUG 18368 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user
+2023-06-05 14:17:45.885 DEBUG 18368 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 
+2023-06-05 14:18:17.645 DEBUG 18368 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 5000000
+2023-06-05 14:18:23.282  INFO 18368 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-06-05 14:18:23.284  INFO 18368 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-06-05 14:22:14.683  INFO 34540 --- [main] avaReportPoiMillionDataExportApplication : Starting JavaReportPoiMillionDataExportApplication using Java 1.8.0_332 on mao with PID 34540 (D:\程序\大四下期\java_report_poi_million_data_export\target\classes started by mao in D:\程序\大四下期\java_report_poi_million_data_export)
+2023-06-05 14:22:14.684 DEBUG 34540 --- [main] avaReportPoiMillionDataExportApplication : Running with Spring Boot v2.7.1, Spring v5.3.21
+2023-06-05 14:22:14.685  INFO 34540 --- [main] avaReportPoiMillionDataExportApplication : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 14:22:15.076  INFO 34540 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-05 14:22:15.140  INFO 34540 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-05 14:22:15.729  INFO 34540 --- [main] avaReportPoiMillionDataExportApplication : Started JavaReportPoiMillionDataExportApplication in 1.293 seconds (JVM running for 1.821)
+2023-06-05 14:22:15.736  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 开始导出百万数据
+2023-06-05 14:22:15.835  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第1页
+2023-06-05 14:22:16.068 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:16.076 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:17.469 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:17.472 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?
+2023-06-05 14:22:17.472 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 200000(Long)
+2023-06-05 14:22:18.263 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:19.206  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第2页
+2023-06-05 14:22:19.207 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:19.207 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:20.503 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:20.504 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:20.504 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 200000(Long), 200000(Long)
+2023-06-05 14:22:21.321 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:22.147  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第3页
+2023-06-05 14:22:22.149 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:22.149 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:23.378 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:23.378 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:23.378 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 400000(Long), 200000(Long)
+2023-06-05 14:22:24.271 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:25.105  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第4页
+2023-06-05 14:22:25.107 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:25.107 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:26.344 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:26.345 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:26.345 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 600000(Long), 200000(Long)
+2023-06-05 14:22:27.365 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:28.232  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第5页
+2023-06-05 14:22:28.234 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:28.234 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:29.495 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:29.495 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:29.495 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 800000(Long), 200000(Long)
+2023-06-05 14:22:30.690 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:31.687  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第6页
+2023-06-05 14:22:31.689 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:31.689 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:32.894 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:32.895 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:32.895 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 1000000(Long), 200000(Long)
+2023-06-05 14:22:34.140 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:34.872  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第7页
+2023-06-05 14:22:34.873 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:34.873 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:36.150 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:36.151 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:36.151 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 1200000(Long), 200000(Long)
+2023-06-05 14:22:37.615 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:38.296  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第8页
+2023-06-05 14:22:38.298 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:38.298 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:39.661 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:39.662 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:39.662 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 1400000(Long), 200000(Long)
+2023-06-05 14:22:41.275 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:41.976  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第9页
+2023-06-05 14:22:41.977 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:41.977 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:43.402 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:43.402 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:43.403 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 1600000(Long), 200000(Long)
+2023-06-05 14:22:45.088 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:45.755  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第10页
+2023-06-05 14:22:45.756 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:45.756 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:47.095 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:47.096 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:47.096 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 1800000(Long), 200000(Long)
+2023-06-05 14:22:48.987 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:49.715  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第11页
+2023-06-05 14:22:49.716 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:49.716 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:51.059 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:51.060 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:51.060 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 2000000(Long), 200000(Long)
+2023-06-05 14:22:53.149 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:53.847  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第12页
+2023-06-05 14:22:53.848 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:53.848 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:55.146 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:55.146 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:55.146 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 2200000(Long), 200000(Long)
+2023-06-05 14:22:57.584 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:22:58.262  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第13页
+2023-06-05 14:22:58.264 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:22:58.264 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:22:59.723 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:22:59.724 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:22:59.725 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 2400000(Long), 200000(Long)
+2023-06-05 14:23:02.363 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:23:03.042  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第14页
+2023-06-05 14:23:03.043 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:23:03.043 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:23:04.413 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:23:04.413 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:23:04.414 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 2600000(Long), 200000(Long)
+2023-06-05 14:23:07.115 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : <==      Total: 200000
+2023-06-05 14:23:07.763  INFO 34540 --- [main] m.j.service.UserServiceImpl              : 查询第15页
+2023-06-05 14:23:07.764 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==>  Preparing: SELECT COUNT(*) AS total FROM user
+2023-06-05 14:23:07.765 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : ==> Parameters: 
+2023-06-05 14:23:09.075 DEBUG 34540 --- [main] m.j.m.UserMapper.selectPage_mpCount      : <==      Total: 1
+2023-06-05 14:23:09.075 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==>  Preparing: SELECT id,user_name,phone,hire_date,address FROM user LIMIT ?,?
+2023-06-05 14:23:09.075 DEBUG 34540 --- [main] m.j.mapper.UserMapper.selectPage         : ==> Parameters: 2800000(Long), 200000(Long)
